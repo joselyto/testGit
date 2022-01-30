@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('test', [Controller::class], 'index');
+Route::get('get', [Controller::class], 'get');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
